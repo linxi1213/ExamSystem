@@ -24,13 +24,13 @@ namespace WpfApp2
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
             System.Windows.MessageBox.Show("即将跳转到考试界面！");
             TestPage testpage = new TestPage();
             testpage.Show();
             this.Close();
-        }
 
+        }
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="考试界面" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
+        <!--<Grid.ColumnDefinitions>
             <ColumnDefinition />
             <ColumnDefinition Width="40"/>
             <ColumnDefinition />
@@ -15,14 +15,21 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid Grid.ColumnSpan="5" Margin="0,0,0,105">
-            <TextBlock Text="01" x:Name="HourArea" VerticalAlignment="Center" FontSize="180" Background="Red" Grid.Column="0" Margin="0,85,554,0"/>
-            <TextBlock Text=":" x:Name="HourSplitMinute" VerticalAlignment="Center" FontSize="180" Background="Red" Margin="220,85,502,0"/>
-            <TextBlock Text="00" x:Name="MinuteArea" VerticalAlignment="Center" FontSize="180" Background="Red" Margin="278,85,277,0" />
-            <TextBlock Text=":" x:Name="MinuteSplitSecond" VerticalAlignment="Center" FontSize="180" Background="Red" Margin="495,85,227,0"/>
-            <TextBlock Text="00" x:Name="SecondArea" VerticalAlignment="Center" FontSize="180" Background="Red" Margin="555,85,0,0"/>
-            <TextBlock Block.TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center"  FontSize="66" Background="Red" Height="110" Width="792"><Run Text="倒计时" /><LineBreak/><Run/></TextBlock>
-        </Grid>
-        <!--<WebBrowser x:Name="WebBrowser1" Grid.ColumnSpan="5" Margin="0,314,0,0" Source="baidu.com"></WebBrowser>-->
+            <Grid Margin="0,85,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="235*"/>
+                    <ColumnDefinition Width="161*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="01" x:Name="HourArea" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontSize="180" Background="Red" Grid.Column="0" Margin="0,0,232,0"/>
+                <TextBlock Text=":" x:Name="HourSplitMinute" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontSize="180" Background="Red" Margin="220,0,180,0"/>
+                <TextBlock Text="00" x:Name="MinuteArea" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontSize="180" Background="Red" Margin="278,0,277,0" Grid.ColumnSpan="2" />
+                <TextBlock Text=":" x:Name="MinuteSplitSecond" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontSize="180" Background="Red" Margin="25,0,227,0" Grid.Column="1"/>
+                <TextBlock Text="00" x:Name="SecondArea" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontSize="180" Background="Red" Margin="85,0,0,0" Grid.Column="1"/>
+            </Grid>
+            <TextBlock Text="倒计时" Block.TextAlignment="Center" x:Name="daojishi" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"  FontSize="66" Background="Red" Margin="0,0,0,204"/>
+            <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,319,0,-106" />
+        </Grid>-->
+        <Frame x:Name="frame" Content="Frame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,0,0" />
     </Grid>
 </Window>
 

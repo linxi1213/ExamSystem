@@ -19,7 +19,7 @@
         <TextBlock HorizontalAlignment="Left" Margin="289,84,0,0" TextWrapping="Wrap" Text="2021001" VerticalAlignment="Top" FontSize="18" Height="23" Width="194" Grid.Column="1" />
         <TextBlock HorizontalAlignment="Left" Margin="289,131,0,0" TextWrapping="Wrap" Text="511304199804280929" VerticalAlignment="Top" FontSize="18" Height="23" Width="194" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Margin="289,179,0,0" TextWrapping="Wrap" Text="张三" VerticalAlignment="Top" FontSize="18" Height="23" Width="194" Grid.Column="1"/>
-        <Button Content="登录" HorizontalAlignment="Left" Margin="155,262,0,0" VerticalAlignment="Top" Width="83" Height="28" Click="Button_Click" Grid.Column="1"/>
+        <Button x:Name="button1" Content="登录" HorizontalAlignment="Left" Margin="155,262,0,0" VerticalAlignment="Top" Width="83" Height="28" Click="Button1_Click" Grid.Column="1"/>
         
     </Grid>
 </Window>

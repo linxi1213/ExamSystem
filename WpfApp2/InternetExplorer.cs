@@ -1,0 +1,6 @@
+﻿namespace SHDocVw
+{
+    class InternetExplorer
+    {
+    }
+}
