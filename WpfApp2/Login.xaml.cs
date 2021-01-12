@@ -31,5 +31,6 @@ namespace WpfApp2
             testpage.Show();
             this.Close();
         }
+
     }
 }

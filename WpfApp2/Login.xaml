@@ -7,19 +7,19 @@
         mc:Ignorable="d"
         Title="登录界面" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="114" Margin="22,85,0,0" VerticalAlignment="Top" Width="100" Source="E:\Chrome\Downloads\qj8706798336.jpg"  Stretch="Fill"/>
-        <Label Content="考生信息" HorizontalAlignment="Left" Margin="212,7,0,0" VerticalAlignment="Top" Width="237" FontWeight="Bold" FontSize="36" Height="55"/>
-        <Grid Margin="212,85,472,206">
-            <TextBlock TextWrapping="Wrap" Text="准考证号：" VerticalAlignment="Top" FontSize="18"/>
+        <Image HorizontalAlignment="Left" Height="114" Margin="22,85,0,0" VerticalAlignment="Top" Width="100" Source="E:\Chrome\Downloads\qj8706798336.jpg"  Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Label Content="考生信息" HorizontalAlignment="Left" Margin="155,7,0,0" VerticalAlignment="Top" Width="237" FontWeight="Bold" FontSize="36" Height="55" Grid.Column="1"/>
+        <Grid Margin="155,85,189,204" Grid.Column="1">
+            <TextBlock TextWrapping="Wrap" Text="准考证号：" VerticalAlignment="Top" FontSize="18" Margin="0,0,220,0"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,47,0,0" TextWrapping="Wrap" Text="身份证号：" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.417,2.13" Width="108"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,94,0,0" TextWrapping="Wrap" Text="姓名：" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.417,2.13" Width="108" Height="29"/>
 
         </Grid>
-        
-        <TextBlock HorizontalAlignment="Left" Margin="346,84,0,0" TextWrapping="Wrap" Text="001" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="346,131,0,0" TextWrapping="Wrap" Text="001" VerticalAlignment="Top" FontSize="18"/>
-        <TextBlock HorizontalAlignment="Left" Margin="346,179,0,0" TextWrapping="Wrap" Text="张三" VerticalAlignment="Top" FontSize="18"/>
-        <Button Content="登录" HorizontalAlignment="Left" Margin="212,262,0,0" VerticalAlignment="Top" Width="83" Height="28" Click="Button_Click"/>
 
+        <TextBlock HorizontalAlignment="Left" Margin="289,84,0,0" TextWrapping="Wrap" Text="2021001" VerticalAlignment="Top" FontSize="18" Height="23" Width="194" Grid.Column="1" />
+        <TextBlock HorizontalAlignment="Left" Margin="289,131,0,0" TextWrapping="Wrap" Text="511304199804280929" VerticalAlignment="Top" FontSize="18" Height="23" Width="194" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="289,179,0,0" TextWrapping="Wrap" Text="张三" VerticalAlignment="Top" FontSize="18" Height="23" Width="194" Grid.Column="1"/>
+        <Button Content="登录" HorizontalAlignment="Left" Margin="155,262,0,0" VerticalAlignment="Top" Width="83" Height="28" Click="Button_Click" Grid.Column="1"/>
+        
     </Grid>
 </Window>
