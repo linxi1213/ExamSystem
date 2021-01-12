@@ -14,6 +14,7 @@ namespace MyProject6.Examinees
        Task<ExamineeDto> CreateUpdateAsync(CreateUpdateExamineeDto input);
 
         //Task<ListResultDto<ExamineeDto> GetExaminees();
+
         Task<int> GetExamineesCount();
     }
 }
