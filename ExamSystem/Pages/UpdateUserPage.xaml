@@ -1,0 +1,33 @@
+﻿<Page x:Class="ExamSystem.Pages.UpdateUserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ExamSystem.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="UpdateUserPage">
+
+    <Grid>
+        <UniformGrid VerticalAlignment="Top" HorizontalAlignment="Center" Columns="2">
+            <Label Content="用户名：" HorizontalAlignment="Right"></Label>
+            <TextBox Width="120" Name="userName" Height="20" VerticalContentAlignment="Center"></TextBox>
+            <Label Content="名：" HorizontalAlignment="Right"></Label>
+            <TextBox Width="120" Name="name" Height="20" VerticalContentAlignment="Center"></TextBox>
+            <Label Content="姓：" HorizontalAlignment="Right"></Label>
+            <TextBox Width="120" Name="surname" Height="20" VerticalContentAlignment="Center"></TextBox>
+            <Label Content="全名：" HorizontalAlignment="Right"></Label>
+            <TextBox Width="120" Name="fullname" Height="20" VerticalContentAlignment="Center"></TextBox>
+            <Label Content="是否启用：" HorizontalAlignment="Right"></Label>
+            <CheckBox Width="120" Name="isActive" Height="20" VerticalContentAlignment="Center"></CheckBox>
+            <Label Content="电子邮件：" HorizontalAlignment="Right"></Label>
+            <TextBox Width="120" Name="emailAddress" Height="20" VerticalContentAlignment="Center"></TextBox>
+            <Label Content="角色名：" HorizontalAlignment="Right"></Label>
+            <StackPanel x:Name="roleNames" >
+
+            </StackPanel>
+            <Button Content="更新" Margin="0,10,0,0" Click="Update_Click"></Button>
+            <Button Content="返回" Margin="0,10,0,0" Click="Reverse_Click"></Button>
+        </UniformGrid>
+    </Grid>
+</Page>
