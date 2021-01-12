@@ -5,26 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         
+        
         xmlns:ui="clr-namespace:Emgu.CV.UI;assembly=Emgu.CV.UI"
         xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
+        Title="认证界面" Height="450" Width="800"
         >
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
 
-        <wfi:WindowsFormsHost Margin="10,29,373.286,45.714">
+        <wfi:WindowsFormsHost Margin="10,29,373,46">
             <ui:ImageBox x:Name="img"/>
         </wfi:WindowsFormsHost>
 
-        <Button Content="Button" HorizontalAlignment="Left" Margin="681,29,0,0" VerticalAlignment="Top" Width="103" Height="34" Click="Button_Click_2"/>
-        <TextBox Name="TextBox1" HorizontalAlignment="Left" Height="301" Margin="457,111,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="327"/>
-        <Button Name="Start"  Content="Start" HorizontalAlignment="Left" Margin="476,36,0,0" VerticalAlignment="Top" Width="120" Height="27" Click="Button_Click_1"/>
-
-
-
-
-
-
-
+        <Button Content="认证" HorizontalAlignment="Left" Margin="681,29,0,0" VerticalAlignment="Top" Width="103" Height="34" Click="Button_Click_2"/>
+        <TextBox Name="TextBox1" HorizontalAlignment="Left" Height="301" Margin="457,111,0,0" TextWrapping="Wrap" Text="准备认证" VerticalAlignment="Top" Width="327"/>
+        <Button Name="Start"  Content="开启摄像头" HorizontalAlignment="Left" Margin="476,36,0,0" VerticalAlignment="Top" Width="120" Height="27" Click="Button_Click_1"/>
+       
     </Grid>
 </Window>

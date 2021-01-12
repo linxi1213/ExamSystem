@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp2.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="登录界面" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="114" Margin="22,85,0,0" VerticalAlignment="Top" Width="100" Source="E:\Chrome\Downloads\qj8706798336.jpg"  Stretch="Fill"/>
+        <Label Content="考生信息" HorizontalAlignment="Left" Margin="212,7,0,0" VerticalAlignment="Top" Width="237" FontWeight="Bold" FontSize="36" Height="55"/>
+        <Grid Margin="212,85,472,206">
+            <TextBlock TextWrapping="Wrap" Text="准考证号：" VerticalAlignment="Top" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="0,47,0,0" TextWrapping="Wrap" Text="身份证号：" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.417,2.13" Width="108"/>
+            <TextBlock HorizontalAlignment="Left" Margin="0,94,0,0" TextWrapping="Wrap" Text="姓名：" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.417,2.13" Width="108" Height="29"/>
+
+        </Grid>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="346,84,0,0" TextWrapping="Wrap" Text="001" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="346,131,0,0" TextWrapping="Wrap" Text="001" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="346,179,0,0" TextWrapping="Wrap" Text="张三" VerticalAlignment="Top" FontSize="18"/>
+        <Button Content="登录" HorizontalAlignment="Left" Margin="212,262,0,0" VerticalAlignment="Top" Width="83" Height="28" Click="Button_Click"/>
+
+    </Grid>
+</Window>

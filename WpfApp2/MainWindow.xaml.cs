@@ -9,12 +9,13 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Forms;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using System.Windows.Threading;
 using Emgu.CV;
 using Emgu.CV.Structure;
 
@@ -55,18 +56,19 @@ namespace WpfApp2
         {
             if (capture != null)
             {
-                if ((string)Start.Content == "Pause")
+                if ((string)Start.Content == "暂停摄像头")
                 {
                     //stop the capture
-                    Start.Content = "Start";
+                    Start.Content = "开启摄像头";
                     capture.Pause();
                 }
                 else
                 {
                     //start the capture
-                    Start.Content = "Pause";
+                    Start.Content = "暂停摄像头";
                     capture.Start();
                 }
+                TextBox1.Text="开始认证";
             }
         }
 
@@ -92,7 +94,12 @@ namespace WpfApp2
             reader.Close();
             myResponse.Close();
 
-            TextBox1.Text = returnXml;
+            //TextBox1.Text = returnXml;
+            TextBox1.Text = "认证成功！";
+            System.Windows.MessageBox.Show("即将跳转到登录界面！");
+            Login login = new Login();
+            login.Show();
+            this.Close();
         }
     }
 }
