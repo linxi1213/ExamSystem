@@ -26,7 +26,7 @@ namespace WpfApp2
         public TestPage()
         {
             InitializeComponent();
-            frame.Source = new Uri("https://i.kaoshiyun.com.cn/v5/exam/6d2974");
+            frame.Source = new Uri("https://www.kaoshiyun.com.cn/features.html");
             //this.Loaded += new RoutedEventHandler(MainWin_Loaded);
         }
 
